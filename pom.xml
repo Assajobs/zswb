@@ -88,6 +88,18 @@
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
+
+<!--        邮件发送-->
+        <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+
+        <!-- 操作redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
