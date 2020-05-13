@@ -1,12 +1,13 @@
-package com.example.zswb.service;
+package com.example.zswb.service.impl;
 
+import com.example.zswb.service.ResumeService;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import com.example.zswb.bean.Resume;
 import com.example.zswb.dao.ResumeMapper;
-import com.example.zswb.service.impl.ResumeService;
+
 @Service
-public class ResumeServiceImpl implements ResumeService{
+public class ResumeServiceImpl implements ResumeService {
 
     @Resource
     private ResumeMapper resumeMapper;

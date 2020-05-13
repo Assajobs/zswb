@@ -1,4 +1,4 @@
-package com.example.zswb.service.impl;
+package com.example.zswb.service;
 
 import com.example.zswb.bean.Resume;
 public interface ResumeService{

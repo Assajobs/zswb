@@ -1,12 +1,13 @@
-package com.example.zswb.service;
+package com.example.zswb.service.impl;
 
+import com.example.zswb.service.IdentificationService;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import com.example.zswb.dao.IdentificationMapper;
 import com.example.zswb.bean.Identification;
-import com.example.zswb.service.impl.IdentificationService;
+
 @Service
-public class IdentificationServiceImpl implements IdentificationService{
+public class IdentificationServiceImpl implements IdentificationService {
 
     @Resource
     private IdentificationMapper identificationMapper;

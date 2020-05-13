@@ -1,6 +1,8 @@
 package com.example.zswb.bean;
 
-public class Resume {
+import java.io.Serializable;
+
+public class Resume implements Serializable {
     /**
      * 简历编号 自增、主键
      */

@@ -15,11 +15,19 @@
     user_id, user_name, user_email, user_password, user_role
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  <!--@mbg.generated-->
+  select
+  <include refid="Base_Column_List" />
+  from users
+  where user_id = #{userId,jdbcType=INTEGER}
+</select>
+
+<!--根据邮箱查询-->
+  <select id="selectByEmail" parameterType="string" resultType="string">
     <!--@mbg.generated-->
-    select 
-    <include refid="Base_Column_List" />
+    select users.user_name
     from users
-    where user_id = #{userId,jdbcType=INTEGER}
+    where user_email = #{email}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     <!--@mbg.generated-->

@@ -1,6 +1,8 @@
 package com.example.zswb.bean;
 
-public class Project {
+import java.io.Serializable;
+
+public class Project implements Serializable {
     /**
      * 项目编号 自增，主键
      */

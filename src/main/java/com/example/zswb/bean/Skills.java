@@ -1,6 +1,8 @@
 package com.example.zswb.bean;
 
-public class Skills {
+import java.io.Serializable;
+
+public class Skills implements Serializable {
     /**
      * 技能编号 自增、主键
      */

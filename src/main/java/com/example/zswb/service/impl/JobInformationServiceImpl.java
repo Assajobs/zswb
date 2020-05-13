@@ -1,12 +1,13 @@
-package com.example.zswb.service;
+package com.example.zswb.service.impl;
 
+import com.example.zswb.service.JobInformationService;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import com.example.zswb.dao.JobInformationMapper;
 import com.example.zswb.bean.JobInformation;
-import com.example.zswb.service.impl.JobInformationService;
+
 @Service
-public class JobInformationServiceImpl implements JobInformationService{
+public class JobInformationServiceImpl implements JobInformationService {
 
     @Resource
     private JobInformationMapper jobInformationMapper;

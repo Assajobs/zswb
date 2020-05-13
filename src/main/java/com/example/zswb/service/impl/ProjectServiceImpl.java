@@ -1,12 +1,13 @@
-package com.example.zswb.service;
+package com.example.zswb.service.impl;
 
+import com.example.zswb.service.ProjectService;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import com.example.zswb.bean.Project;
 import com.example.zswb.dao.ProjectMapper;
-import com.example.zswb.service.impl.ProjectService;
+
 @Service
-public class ProjectServiceImpl implements ProjectService{
+public class ProjectServiceImpl implements ProjectService {
 
     @Resource
     private ProjectMapper projectMapper;

@@ -1,8 +1,9 @@
 package com.example.zswb.bean;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Education {
+public class Education implements Serializable {
     /**
      * 编号 自增、主键
      */

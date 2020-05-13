@@ -1,12 +1,13 @@
-package com.example.zswb.service;
+package com.example.zswb.service.impl;
 
+import com.example.zswb.service.WorksService;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import com.example.zswb.bean.Works;
 import com.example.zswb.dao.WorksMapper;
-import com.example.zswb.service.impl.WorksService;
+
 @Service
-public class WorksServiceImpl implements WorksService{
+public class WorksServiceImpl implements WorksService {
 
     @Resource
     private WorksMapper worksMapper;

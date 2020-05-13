@@ -2,15 +2,19 @@ package com.example.zswb.bean;
 
 import java.io.Serializable;
 
-public class Users implements Serializable {
+public class UsersVccode  implements Serializable {
+
+    private String yzm;
     /**
      * 用户编号 自增，主键
      */
     private Integer userId;
+
     /**
      * 用户昵称 非空
      */
     private String userName;
+
     /**
      * 用户邮箱 非空，唯一
      */
@@ -25,6 +29,14 @@ public class Users implements Serializable {
      * 用户角色 非空（0代表项目发布者，1代表项目接单者）
      */
     private Integer userRole;
+
+    public String getYzm() {
+        return yzm;
+    }
+
+    public void setYzm(String yzm) {
+        this.yzm = yzm;
+    }
 
     public Integer getUserId() {
         return userId;
@@ -67,10 +79,23 @@ public class Users implements Serializable {
     }
 
 
-    public Users(String userName, String userEmail, String userPassword, Integer userRole) {
+
+    public UsersVccode( String userName, String userEmail, String userPassword, Integer userRole) {
         this.userName = userName;
         this.userEmail = userEmail;
         this.userPassword = userPassword;
         this.userRole = userRole;
+    }
+
+    @Override
+    public String toString() {
+        return "UsersVccode{" +
+                "yzm=" + yzm +
+                ", userId=" + userId +
+                ", userName='" + userName + '\'' +
+                ", userEmail='" + userEmail + '\'' +
+                ", userPassword='" + userPassword + '\'' +
+                ", userRole=" + userRole +
+                '}';
     }
 }

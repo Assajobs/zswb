@@ -1,12 +1,13 @@
-package com.example.zswb.service;
+package com.example.zswb.service.impl;
 
+import com.example.zswb.service.EducationService;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import com.example.zswb.bean.Education;
 import com.example.zswb.dao.EducationMapper;
-import com.example.zswb.service.impl.EducationService;
+
 @Service
-public class EducationServiceImpl implements EducationService{
+public class EducationServiceImpl implements EducationService {
 
     @Resource
     private EducationMapper educationMapper;

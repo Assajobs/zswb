@@ -1,6 +1,8 @@
 package com.example.zswb.bean;
 
-public class Works {
+import java.io.Serializable;
+
+public class Works implements Serializable {
     /**
      * 作品编号 自增、主键
      */

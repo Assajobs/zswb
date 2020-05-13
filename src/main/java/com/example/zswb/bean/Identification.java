@@ -1,6 +1,8 @@
 package com.example.zswb.bean;
 
-public class Identification {
+import java.io.Serializable;
+
+public class Identification implements Serializable {
     /**
      * 认证编号 自增、主键
      */
@@ -12,19 +14,10 @@ public class Identification {
     private String identityCard;
 
     /**
-     * 身份证正面反 非空
-     */
-    private String identityImage;
-
-    /**
-     * 认证状态 非空（0代表未认证，1代表认证通过）
-     */
-    private Integer identityStatus;
-
-    /**
      * 所属人 非空
      */
     private Integer identityPerson;
+
 
     public Integer getIdentityId() {
         return identityId;
@@ -40,22 +33,6 @@ public class Identification {
 
     public void setIdentityCard(String identityCard) {
         this.identityCard = identityCard;
-    }
-
-    public String getIdentityImage() {
-        return identityImage;
-    }
-
-    public void setIdentityImage(String identityImage) {
-        this.identityImage = identityImage;
-    }
-
-    public Integer getIdentityStatus() {
-        return identityStatus;
-    }
-
-    public void setIdentityStatus(Integer identityStatus) {
-        this.identityStatus = identityStatus;
     }
 
     public Integer getIdentityPerson() {

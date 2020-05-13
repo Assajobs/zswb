@@ -1,12 +1,13 @@
-package com.example.zswb.service;
+package com.example.zswb.service.impl;
 
+import com.example.zswb.service.SkillsService;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import com.example.zswb.dao.SkillsMapper;
 import com.example.zswb.bean.Skills;
-import com.example.zswb.service.impl.SkillsService;
+
 @Service
-public class SkillsServiceImpl implements SkillsService{
+public class SkillsServiceImpl implements SkillsService {
 
     @Resource
     private SkillsMapper skillsMapper;

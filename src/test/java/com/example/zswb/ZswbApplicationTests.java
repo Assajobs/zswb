@@ -28,6 +28,8 @@ class ZswbApplicationTests {
         System.out.println("连接地址>>>>>" + connection.getMetaData().getURL());
         connection.close();
 
+
+
     }
     @Autowired
    JavaMailSenderImpl mailSender;
@@ -53,8 +55,8 @@ class ZswbApplicationTests {
 
     @Test
     public void testRedis(){
-        redisTemplate.opsForValue().set("mykey","hh");
-        System.out.println((redisTemplate.opsForValue().get("mykey")));
+         redisTemplate.opsForValue().set("ee","hh");
+        System.out.println((redisTemplate.opsForValue().get("ee")));
     }
 
 }

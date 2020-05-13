@@ -1,8 +1,9 @@
 package com.example.zswb.bean;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class JobInformation {
+public class JobInformation implements Serializable {
     /**
     * 工作信息编号 自增、非空
     */
